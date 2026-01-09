@@ -1,0 +1,348 @@
+:root {
+    --primary: #0066ff;
+    --primary-dark: #0052d4;
+    --gradient: linear-gradient(135deg, #0066ff, #00ccff);
+    --background: #0f172a;
+    --card-bg: #1e293b;
+    --text: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border: #334155;
+    --success: #10b981;
+    --warning: #f59e0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--gradient);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.beta-badge {
+    background: #f59e0b;
+    color: #000;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.trust-signal {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--success);
+    color: var(--success);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Герой */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.highlight {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.stat {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Предупреждение */
+.alert {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid var(--warning);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.alert i {
+    color: var(--warning);
+    font-size: 1.2rem;
+}
+
+/* Секция скачивания */
+.download-section {
+    margin-bottom: 30px;
+}
+
+.download-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.download-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.download-card h2 i {
+    color: var(--primary);
+}
+
+.version-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 102, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.version-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.version {
+    background: var(--primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.build {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.size {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.warning-note {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.warning-note i {
+    color: #ef4444;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.warning-note small {
+    display: block;
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* Кнопка скачивания - САМОЕ ВАЖНОЕ */
+.download-button {
+    display: block;
+    background: var(--gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 102, 255, 0.3);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.button-content i {
+    font-size: 1.8rem;
+}
+
+.button-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.button-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.button-arrow {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.steps {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.steps h4 {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.steps ol {
+    margin-left: 20px;
+    color: var(--text-secondary);
+}
+
+.steps li {
+    margin-bottom: 8px;
+}
+
+.steps code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.features-mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.feature i {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-mini {
+        grid-template-columns: 1fr;
+    }
+}

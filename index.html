@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos VPN — Премиум защита</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🌐</div>
+                <span class="logo-text">Lumos VPN</span>
+                <span class="beta-badge">BETA</span>
+            </div>
+            <div class="trust-signal">
+                <i class="fas fa-lock"></i> Зашифровано
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>VPN нового поколения <span class="highlight">уже здесь</span></h1>
+                <p class="subtitle">Скорость 10 Гбит/с • Безлимитный трафик • Нулевое логирование</p>
+                
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">< 20 мс</div>
+                        <div class="stat-label">Пинг</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">256-bit</div>
+                        <div class="stat-label">Шифрование</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">94</div>
+                        <div class="stat-label">Сервера</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ключевое преимущество -->
+            <div class="alert">
+                <i class="fas fa-crown"></i>
+                <div>
+                    <strong>ЭКСКЛЮЗИВНЫЙ ДОСТУП:</strong> Вы среди первых, кто тестирует Lumos VPN до официального релиза.
+                </div>
+            </div>
+
+            <!-- Кнопка скачивания - САМОЕ ГЛАВНОЕ -->
+            <section class="download-section">
+                <div class="download-card">
+                    <h2><i class="fas fa-download"></i> Установить Lumos VPN</h2>
+                    
+                    <div class="version-info">
+                        <div class="version-badge">
+                            <span class="version">v1.20.17</span>
+                            <span class="build">Build</span>
+                        </div>
+                        <div class="size">22.1 MB</div>
+                    </div>
+
+                    <div class="warning-note">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div>
+                            <p><strong>Важно:</strong> Приложение ещё не в Google Play.</p>
+                            <small>Мы проходим финальную проверку Google (ожидание 5-12 дней). Бот отправит вам последнюю сборку прямо в Telegram.</small>
+                        </div>
+                    </div>
+
+                    <!-- КНОПКА ДЛЯ ОТКРЫТИЯ БОТА -->
+                    <button class="download-button" id="getApkButton">
+                        <div class="button-content">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <div class="button-title">Получить APK в Telegram</div>
+                                <div class="button-subtitle">Бот @Lumos1VPN_bot отправит файл в чат</div>
+                            </div>
+                        </div>
+                        <div class="button-arrow">→</div>
+                    </button>
+
+                    <div class="steps">
+                        <h4>Как получить APK:</h4>
+                        <ol>
+                            <li>Нажмите кнопку выше (откроется Telegram)</li>
+                            <li>Нажмите "START" в боте @Lumos1VPN_bot</li>
+                            <li>Отправьте боту команду <code>/apk</code></li>
+                            <li>Бот перешлет APK файл прямо в чат</li>
+                            <li>Скачайте и установите файл</li>
+                        </ol>
+                    </div>
+
+                    <div class="features-mini">
+                        <div class="feature">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Проверено на вирусы</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Мгновенная отправка</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>Поддержка 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Отзывы -->
+            <section class="testimonials">
+                <h3></h3>
+                <div class="testimonial">
+                    <div class="avatar"></div>
+                    <div class="content">
+                        <div class="stars"></div>
+                        <p>""</p>
+                        <div class="author"></div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="avatar"></div>
+                    <div class="content">
+                        <div class="stars"></div>
+                        <p>"</p>
+                        <div class="author"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq">
+                <h3>Вопросы и ответы</h3>
+                <div class="faq-item">
+                    <div class="faq-question">Как получить APK файл?</div>
+                    <div class="faq-answer">Нажмите кнопку "Получить APK в Telegram". Откроется бот @Lumos1VPN_bot. Отправьте ему команду <code>/apk</code> и он перешлет файл прямо в ваш чат.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Это безопасно?</div>
+                    <div class="faq-answer">Да. APK имеет цифровую подпись. Файл отправляется из официального приватного канала.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Когда будет в Google Play?</div>
+                    <div class="faq-answer">В течение 2 недель. Сейчас доступна только прямая установка через бота для бета-тестеров.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"></div>
+                    <div class="faq-answer"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Lumos VPN. Все права защищены.</p>
+            <p class="footer-note">Официальный бот для распространения: @Lumos1VPN_bot</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
